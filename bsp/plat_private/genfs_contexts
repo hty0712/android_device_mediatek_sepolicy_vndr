@@ -12,6 +12,7 @@ genfscon proc /driver/cl_cam_status u:object_r:proc_cl_cam_status:s0
 # Operation: R migration
 # Purpose: mtk EM battery log
 genfscon proc /mtk_battery_cmd u:object_r:proc_battery_cmd:s0
+genfscon proc /mtk_battery_cmd/current_cmd u:object_r:proc_battery_cmd:s0
 
 # Date : 2020/03/25
 # Operation: R migration

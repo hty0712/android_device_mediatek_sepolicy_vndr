@@ -8,3 +8,7 @@ set_prop(init, system_mtk_rsc_sys_prop)
 # Date: W20.10
 # Purpose: resize filesystem(userdata) needs read link file
 allow init resize_exec:lnk_file r_file_perms;
+
+# Purpose: mtk bypass charge toggle
+allow init proc_battery_cmd:dir search;
+allow init proc_battery_cmd:file w_file_perms;
